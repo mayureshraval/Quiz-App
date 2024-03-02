@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+.card{
+    width: 80%;
+    height: 90vh;
+    position: relative;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: #150050;
+    border-radius: 20px;
+    min-height: fit-content;
+}
+h2{
+    color: #ffdfeb;
+}
+.answerbtns{
+    display: flex;
+    /* gap: 1.5em; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+.ans{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background: #130130;
+    color: #ffdfeb;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    outline: 1px solid #FB2576 ;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 10px auto 10px;
+}
+.ans:hover:disabled{
+    cursor: no-drop;
+}
+.ans:hover{
+    background-color: #FB2576;
+    color: #130130;
+    outline: 1px solid #ffdfeb;
+}
+
+.correct{
+    background-color: rgb(209, 252, 144);
+    color: #000000;
+    outline: 1px solid white;
+}
+.correct:hover{
+    background-color: rgb(209, 252, 144);
+    color: #000000;
+}
+.incorrect{
+    background-color: rgb(253, 15, 15);
+    color: #ffffff;
+    outline: 1px solid white;
+}
+.incorrect:hover{
+    background-color: rgb(253, 15, 15);
+    color: #ffffff;
+}
+
+.next{
+    margin-top: 10px;
+    width: 40%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background: #130130;
+    color: #ffdfeb;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    outline: 1px solid #FB2576 ;
+    border-radius: 2px;
+    margin-top: -0.8em;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    visibility: hidden;
+}
+.next:hover{
+    outline: 1px solid white;
+}
+.score{
+    color: white;
+}
+
+@media (min-width:680px) {
+    .card{
+        max-height: 460px;
+        max-width: 500px;
+    }
+}
