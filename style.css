@@ -14,7 +14,7 @@ body{
 }
 .card{
     width: 80%;
-    height: 90vh;
+    height: 70vh;
     position: relative;
     padding: 1em;
     display: flex;
